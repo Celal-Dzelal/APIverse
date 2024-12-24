@@ -1,4 +1,77 @@
 @import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #769da6;
+  font-family: "Arvo", serif;
+  width: 100vw;
+  height: 100vh;
+  align-content: center;
+}
+
+.container {
+  width: 40vw;
+  height: auto;
+  margin: auto;
+  padding: 5px;
+  border: 2px solid red;
+  border-radius: 5px;
+  border-color: #261612;
+  background-color: #d9bc9a;
+}
+.container__inputContainer, .container__infoContainer {
+  border: 2px solid red;
+  border-radius: 5px;
+  border: none;
+  background-color: #254559;
+  margin: 5px auto;
+  width: 95%;
+  padding: 5px;
+}
+.container__inputContainer--input {
+  height: 1.5rem;
+  width: 80%;
+  text-align: center;
+  color: #d9bc9a;
+  border: 2px solid red;
+  border-radius: 5px;
+  border: none;
+}
+.container__inputContainer--button {
+  height: 1.5rem;
+  width: 18%;
+  border: 2px solid red;
+  border-radius: 5px;
+  border: none;
+  background-color: #d9bc9a;
+  font-weight: bold;
+}
+.container__inputContainer--button:active {
+  transform: scale(0.97);
+}
+.container__infoContainer {
+  text-align: center;
+}
+.container__infoContainer--img {
+  object-fit: cover;
+  object-position: center;
+  margin: auto;
+  border: 2px solid red;
+  border-radius: 5px;
+  border: none;
+}
+.container__infoContainer--title {
+  text-align: center;
+  color: #769da6;
+}
+.container__infoContainer--text {
+  color: #d9bc9a;
+  text-align: left;
+}
 
 /*# sourceMappingURL=style.css.map */

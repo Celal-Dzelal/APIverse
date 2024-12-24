@@ -17,6 +17,7 @@ $fontFamily: "Arvo", serif;
 
 @mixin border {
   border: 2px solid red;
+  border-radius: 5px;
 }
 
 @mixin display {
@@ -27,20 +28,71 @@ $fontFamily: "Arvo", serif;
 }
 
 //! STYLES
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  background-color: $lightBlue;
+  font-family: $fontFamily;
+  width: 100vw;
+  height: 100vh;
+  align-content: center;
+}
 .container {
+  width: 40vw;
+  height: auto;
+  margin: auto;
+  padding: 5px;
+  @include border();
+  border-color: $darkBrown;
+  background-color: $cream;
   &__inputContainer {
+    @include border();
+    border: none;
+    background-color: $blue;
+    margin: 5px auto;
+    width: 95%;
+    padding: 5px;
     &--input {
+      height: 1.5rem;
+      width: 80%;
+      text-align: center;
+      color: $cream;
+      @include border();
+      border: none;
     }
     &--button {
+      height: 1.5rem;
+      width: 18%;
+      @include border();
+      border: none;
+      background-color: $cream;
+      font-weight: bold;
+    }
+    &--button:active {
+      transform: scale(0.97);
     }
   }
   &__infoContainer {
+    @extend .container__inputContainer;
+    text-align: center;
     &--img {
+      object-fit: cover;
+      object-position: center;
+      margin: auto;
+      @include border();
+      border: none;
     }
     &--title {
+      text-align: center;
+      color: $lightBlue;
     }
     &--text {
+      color: $cream;
+      text-align: left;
     }
   }
 }
