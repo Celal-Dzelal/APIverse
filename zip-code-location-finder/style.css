@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Geo:ital@0;1&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  align-content: center;
+  background-color: #1a1a26;
+  font-family: "Geo", serif;
+  font-size: 1.5rem;
+}
+
+.fail {
+  width: 40vw;
+  height: 30vh;
+  border: 2px solid #365b73;
+  border-radius: 10px;
+  margin: auto;
+  background-color: #aabfb3;
+  color: #1a1a26;
+  text-align: center;
+  display: none;
+}
+.container {
+  border: 2px solid #365b73;
+  width: 50vw;
+  height: 40vh;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #aabfb3;
+  border-radius: 10px;
+}
+.container__icon, .fail__icon {
+  font-size: 50px;
+  color: #365b73;
+  margin: 20px 0;
+}
+.container__inputContainer--input {
+  height: 1.5rem;
+  color: #1a1a26;
+  text-align: center;
+}
+.container__inputContainer--button, .fail__button {
+  height: 1.5rem;
+  padding: 0 10px;
+  background-color: #1a1a26;
+  color: #aabfb3;
+  border: none;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.container__inputContainer--button:active, .fail__button:active {
+  transform: scale(0.9);
+}
+.container__outputContainer {
+  min-height: 20vh;
+  margin-top: 10px;
+  text-align: center;
+}
+.container__outputContainer--title, .fail__text {
+  margin-bottom: 10px;
+  color: #365b73;
+}
+.container__outputContainer--text {
+  margin-bottom: 5px;
+  color: #1a1a26;
+}
+
+/*# sourceMappingURL=style.css.map */

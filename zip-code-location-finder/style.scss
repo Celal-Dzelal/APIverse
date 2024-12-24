@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Geo:ital@0;1&display=swap");
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css");
+
+//? VARIABLES
+
+$colorOne: #1a1a26;
+$colorTwo: #365b73;
+$colorThree: #586e73;
+$colorFour: #92a6a2;
+$colorFive: #aabfb3;
+$fontFamily: "Geo", serif;
+
+//? MIXIN
+
+@mixin display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  align-content: center;
+  background-color: $colorOne;
+  font-family: $fontFamily;
+  font-size: 1.5rem;
+}
+
+.fail {
+  width: 40vw;
+  height: 30vh;
+  border: 2px solid $colorTwo;
+  border-radius: 10px;
+  margin: auto;
+  background-color: $colorFive;
+  color: $colorOne;
+  text-align: center;
+  display: none;
+  &__icon {
+    @extend .container__icon;
+  }
+  &__text {
+    @extend .container__outputContainer--title;
+  }
+  &__button {
+    @extend .container__inputContainer--button;
+  }
+}
+
+.container {
+  border: 2px solid $colorTwo;
+  width: 50vw;
+  height: 40vh;
+  margin: auto;
+  text-align: center;
+  @include display();
+  background-color: $colorFive;
+  border-radius: 10px;
+  &__icon {
+    font-size: 50px;
+    color: $colorTwo;
+    margin: 20px 0;
+  }
+  &__inputContainer {
+    &--input {
+      height: 1.5rem;
+      color: $colorOne;
+      text-align: center;
+    }
+    &--button {
+      height: 1.5rem;
+      padding: 0 10px;
+      background-color: $colorOne;
+      color: $colorFive;
+      border: none;
+      font-weight: bold;
+      border-radius: 10px;
+    }
+    &--button:active {
+      transform: scale(0.9);
+    }
+  }
+  &__outputContainer {
+    min-height: 20vh;
+    margin-top: 10px;
+    text-align: center;
+    &--title {
+      margin-bottom: 10px;
+      color: $colorTwo;
+    }
+    &--text {
+      margin-bottom: 5px;
+      color: $colorOne;
+    }
+  }
+}

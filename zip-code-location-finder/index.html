@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="fail" id="fail">
+      <i class="fa-solid fa-face-sad-cry fail__icon"></i>
+      <p class="fail__text" id="failText">Oops We Have Some Problems</p>
+      <button id="restartButton" class="fail__button">Try Again</button>
+    </div>
+    <div class="container" id="container">
+      <i class="fa-solid fa-map-location-dot container__icon"></i>
+      <div id="input-container" class="container__inputContainer">
+        <input
+          type="text"
+          name=""
+          id="input"
+          class="container__inputContainer--input"
+          placeholder="forEx: 17200"
+        />
+        <button id="button" class="container__inputContainer--button">
+          Search
+        </button>
+      </div>
+      <div id="output-container" class="container__outputContainer">
+        <h2 id="title" class="container__outputContainer--title">Location</h2>
+        <p id="text1" class="container__outputContainer--text">Latitude</p>
+        <p id="text2" class="container__outputContainer--text">Longitude</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
