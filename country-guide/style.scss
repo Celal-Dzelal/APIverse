@@ -42,7 +42,8 @@ body {
   align-content: center;
 }
 .container {
-  width: 40vw;
+  min-width: 380px;
+  max-width: 380px;
   height: auto;
   margin: auto;
   padding: 5px;
@@ -60,7 +61,7 @@ body {
       height: 1.5rem;
       width: 80%;
       text-align: center;
-      color: $cream;
+      color: $darkBrown;
       @include border();
       border: none;
     }
@@ -78,6 +79,7 @@ body {
   }
   &__infoContainer {
     @extend .container__inputContainer;
+    display: none;
     text-align: center;
     &--img {
       object-fit: cover;
@@ -88,11 +90,13 @@ body {
     }
     &--title {
       text-align: center;
+      padding-top: 5px;
       color: $lightBlue;
     }
     &--text {
-      color: $cream;
+      color: white;
       text-align: left;
+      padding-top: 5px;
     }
   }
 }
