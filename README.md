@@ -111,7 +111,7 @@ Finds geographic location (latitude and longitude) based on zip code input, curr
 
 ### Demo
 
-![Demo](./zip-code-location-finder/)
+![Demo](./zip-code-location-finder/demo.gif)
 
 ### Features
 
